@@ -1,0 +1,90 @@
+html {
+   user-select: none;
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   font-family: "Silkscreen", "Brush Script MT", cursive;
+}
+
+.screen {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: black;
+}
+
+.mainpart {
+   width: 100%;
+   height: 70%;
+   background-color: black;
+   background-size: top;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   /*background-image: url("images/trees.png");*/
+   animation: bgmove 1s infinite;
+}
+@keyframes bgmove {
+   0% {background-position: left;}
+   5% {background-position: center;}
+   10% {background-position: right;}
+   15% {background-position: left;}
+   20% {background-position: center;}
+   25% {background-position: right;}
+   30% {background-position: left;}
+   35% {background-position: center;}
+   40% {background-position: right;}
+   45% {background-position: left;}
+   50% {background-position: center;}
+   55% {background-position: right;}
+   60% {background-position: left;}
+   65% {background-position: center;}
+   70% {background-position: right;}
+   75% {background-position: left;}
+   80% {background-position: center;}
+   85% {background-position: right;}
+   90% {background-position: left;}
+   95% {background-position: center;}
+   100% {background-position: right;}
+}
+
+.road {
+   width: 100%;
+   height: 29%;
+   border-top: 1vh white solid;
+   background-color: black;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+}
+
+.car {
+   width: 500px;
+   height: 130px;
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+}
+
+.infotxt {
+   font-size: 4vh;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   margin: 0 0 0 0;
+   color: white;
+}
+.moneyinfotxt {
+   font-size: 5vh;
+   position: fixed;
+   bottom: 20px;
+   left: 20px;
+   margin: 0 0 0 0;
+   color: white;
+}

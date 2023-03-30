@@ -1,0 +1,61 @@
+.mtitle {
+   color: white;
+   font-size: 16vh;
+   text-align: center;
+   margin: 4vh 4vh 4vh 4vh;
+   margin-top: 4vh;
+   margin-bottom: 12vh;
+}
+
+.mtxt {
+   color: white;
+   font-size: 8vh;
+   text-align: center;
+   margin: 4vh 4vh 4vh 4vh;
+   margin-top: 4vh;
+   cursor: pointer;
+}
+.mtxt:hover {
+   text-decoration: underline;
+}
+.mtxtstatic {
+   color: white;
+   font-size: 8vh;
+   text-align: center;
+   margin: 4vh 4vh 4vh 4vh;
+   margin-top: 4vh;
+}
+.cltxtstatic {
+   color: white;
+   font-size: 4vh;
+   text-align: center;
+   margin: 4vh 4vh 4vh 4vh;
+   margin-top: 4vh;
+}
+.clver {
+   color: #26cefc;
+}
+
+.mhighscore {
+   font-size: 4vh;
+   margin: 0 0 0 0;
+   position: absolute;
+   bottom: 5vh;
+   left: 5vh;
+   color: white;
+}
+
+.version {
+   font-size: 3vh;
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   margin: 0 0 0 0;
+   color: white;
+   opacity: 0.3;
+   transition: 0.4s ease-in-out;
+}
+
+.version:hover {
+   opacity: 1;
+}
