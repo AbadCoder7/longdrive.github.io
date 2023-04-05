@@ -18,7 +18,7 @@ var randomEvent = function() {
          var j = 0
          j = Math.floor(Math.random() * 8) + 1;
          
-         const testingEventBoolean = true;
+         const testingEventBoolean = false;
          if (testingEventBoolean == true) {j = 4;}
          
          setTheEvent(j);
