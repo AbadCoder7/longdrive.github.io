@@ -16,7 +16,11 @@ var randomEvent = function() {
          eventgoing = true;
          statstop = true;
          var j = 0
-         j = Math.floor(Math.random() * 5) + 1;
+         j = Math.floor(Math.random() * 8) + 1;
+         
+         const testingEventBoolean = true;
+         if (testingEventBoolean == true) {j = 4;}
+         
          setTheEvent(j);
       }
    }
@@ -56,7 +60,23 @@ function setTheEvent(x) {
       evpop = '<p class="evopt" onclick="optOne(5)">The hit deer with your car</p><p class="evopt" onclick="optTwo(5)">Wait for it to pass by</p>';
       document.getElementById("evn").innerHTML = "Crossing Deer";
       document.getElementById("evopts").innerHTML = evpop;
-   } else {
+   }
+   else if (x == 6) {
+      evpop = '<p class="evopt" onclick="optOne(6)">Hit the family</p><p class="evopt" onclick="contRoad()">Not commit murder (Wrong Option)</p>';
+      document.getElementById("evn").innerHTML = "Family Crossing";
+      document.getElementById("evopts").innerHTML = evpop;
+   }
+   else if (x == 7) {
+      evpop = '<p class="evopt" onclick="optOne(7)">Inspect the item</p><p class="evopt" onclick="contRoad()">Continue traveling the road</p>';
+      document.getElementById("evn").innerHTML = "Mysterious Item";
+      document.getElementById("evopts").innerHTML = evpop;
+   }
+   else if (x == 8) {
+      evpop = '<p class="evopt" onclick="optOne(8)">Rob his ass</p><p class="evopt" onclick="optTwo(8)">Ram him with your car</p>';
+      document.getElementById("evn").innerHTML = "Injured Man";
+      document.getElementById("evopts").innerHTML = evpop;
+   }
+   else {
       alert("EVENT NULL FAILED");
    }
 }
@@ -87,7 +107,6 @@ function optOne(x) {
       document.getElementById("event").style.display = "none";
    }
    else if (x == 4) {
-      hitched++;
       var i = 0
       i = Math.floor(Math.random() * 3) + 1;
       if (i == 1) {
@@ -111,8 +130,23 @@ function optOne(x) {
    else if (x == 5) {
       var i = 0
       i = Math.floor(Math.random() * 2) + 1;
+      corpses++;
       deerMsg(i);
    }
+   else if (x == 6) {
+      var i = 0
+      var j = 0
+      i = Math.floor(Math.random() * 20) + 1;
+      j = Math.floor(Math.random() * 20) + 1;
+      corpses = corpses + 4;
+      familyMsg(i, j);
+   }
+   else if (x == 7) {
+      var i = 0
+      i = Math.floor(Math.random() * 4) + 1;
+      mysteryMsg(i);
+   }
+   else if (x == 8) {hurtmanMsg(1);}
 }
 
 function optTwo(x) {
@@ -128,12 +162,63 @@ function optTwo(x) {
       document.getElementById("evopts").innerHTML = evpop;
       fuel = fuel - 25;
    }
+   else if (x == 8) {hurtmanMsg(2); corpses++;}
 }
 function contRoad() {
    statstop = false;
    eventgoing = false;
    document.getElementById("event").style.display = "none";
    document.getElementById("shop").style.display = "none";
-   setTimeout(randomEvent, 20000);
+   setTimeout(randomEvent, 10000);
 }
 
+
+
+/*
+NEW EVENT IDEAS :
+
+Key:
+N - Nutrition
+D - Damage
+I - Instant Death
+M - Money
+R - Repair
+B - Blank
+() - Traits
+"" - Notes
+
+Event Possibilties:
+DONE - Family Crossing (N D) "Family of five, sugguested by a friend, achievement" 
+DONE - Mysterious Item (M D N) "Can be used as a way of getting money"
+DONE - Injured Man (M) "Rob him"
+
+------------------------------------------------------------------------
+
+BACKGROUNDS :
+backgrounds is an idea that I could possibly make it feel as if the player is in a different location
+this could also be used for secrets
+
+
+Main:
+
+Valley - Status: F
+Forest - Status: F
+Tundra / Snowy Forest - Status: F
+Desert - Status: F
+City - Status: F
+
+Secrets:
+
+Hellscape / Bloody City - Status: F
+background: a secret for if you manage to murder many people
+
+Black Void - Status: F
+background: for if you play horribly and barely make it to 300 miles
+
+White Void  - Status: SCRAPPED
+background: SCRAPPED
+
+Bliss Fields (White void replacement) - Status: F
+background: for making it to 500 miles (or maybe 300 idk)
+
+*/
