@@ -7,7 +7,7 @@ var food = 2
 var money = 150
 
 // technical things
-let ver = "v0.2"
+let ver = "v0.4.1"
 
 function statShow() {
    if (stat >= 950) {
@@ -42,6 +42,7 @@ setInterval(function() {
    document.getElementById("shopmoney").innerHTML = money;
    die();
    document.getElementById("ver").innerText = ver;
+   document.getElementById("miles").innerHTML = miles;
 }, 1);
 // second update
 setInterval(function() {
@@ -52,11 +53,13 @@ setInterval(function() {
       miles = miles + 1;
       stat = stat - 1;
       document.getElementById("miles").innerHTML = miles;
+      
    }
 }, 1000);
 // third update
 setInterval(function() {
    if (statstop == false) {stat = stat - 10;}
+   if (corpses >= 20) {genocide = true;}
 }, 10000);
 
 function useFuel() {
