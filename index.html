@@ -2,7 +2,6 @@
 <html>
    <head>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
-      <link rel="stylesheet" href="css/achievement.css">
       <link rel="stylesheet" href="css/eventstyle.css">
       <link rel="stylesheet" href="css/menus.css">
       <link rel="stylesheet" href="css/gamestuff.css">
@@ -52,7 +51,7 @@
       <div class="screen" id="death">
          <p class="mtitle">End of the road</p>
          <p class="mtxtstatic" id="whyusuck">[RESULT OF DEATH]</p>
-         <p class="mtxtstatic">Score: <span id="dscore">0</span> Miles</p><br>
+         <p class="mtxtstatic">Score: <span id="dscore">0</span></p><br>
          <p class="mtxt" onclick="mainMenuNav(99)">- Back to main menu -</p>
       </div>
       
@@ -60,7 +59,7 @@
          <p class="mtitle">Long Drive</p>
          <p class="mtxt" onclick="mainMenuNav(1)">- Play Game -</p>
          <p class="mtxt" onclick="mainMenuNav(2)">- About -</p>
-         <p class="mtxt" onclick="mainMenuNav(3)">- Achievements -</p>
+         <p class="mtxtstatic" style="font-size: 5vh; position: fixed; bottom: 0; left: 0; margin: 1%;">High Score: <span id="highestscore">0</span></p>
          
          <!-- <p class="mhighscore">High Score: <span id="bestscore">0</span> Miles</p> -->
       </div>
@@ -69,61 +68,13 @@
          <p class="mtxtstatic">Long Drive was created by Joshua "Zeke" Martinez</p><br>
          <p class="mtxt" onclick="mainBack()">- Back to main menu -</p>
       </div>
-      <div class="screen" id="achi">
-         <p class="mtitle">Achievements</p>
-         
-         <div class="achicont">
-            <div class="achipic" id="a1"></div>
-            <p class="achititle">On My Way</p>
-            <p class="achitxt">Play Long Drive for the first time</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a2"></div>
-            <p class="achititle">The Highway</p>
-            <p class="achitxt">Drive 50 or more miles</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a3"></div>
-            <p class="achititle">A long road ahead of you</p>
-            <p class="achitxt">Drive 100 or more Miles</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a4"></div>
-            <p class="achititle">Long Drive</p>
-            <p class="achitxt">Drive 300 or more Miles</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a5"></div>
-            <p class="achititle">Bambi</p>
-            <p class="achitxt">Successfully kill a deer for the first time</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a6"></div>
-            <p class="achititle">Better than Ever</p>
-            <p class="achitxt">Repair your car when it's at full status</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a7"></div>
-            <p class="achititle">Taxi Cab</p>
-            <p class="achitxt">Pick up 30 Hitchhikers in one drive</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a8"></div>
-            <p class="achititle">Last Stop</p>
-            <p class="achitxt">End the drive</p>
-         </div>
-         <div class="achicont">
-            <div class="achipic" id="a9"></div>
-            <p class="achititle">._.</p>
-            <p class="achitxt">Find the ._.</p>
-         </div>
-         
-         <p class="mtxt" onclick="mainMenuNav(99)">- Back to main menu -</p>
-      </div>
       
       <div class="screen" id="change">
             <p class="mtitle">Changelog</p>
             <p class="cltxtstatic">
+               <span class="clver">v0.4.1</span> - Bug Fix<br>
+               <span class="clver">v0.4</span> - New events and score system improved<br>
+               <span class="clver">v0.3</span> - Achievements removed and replaced w/ score system<br>
                <span class="clver">v0.2</span> - Art Changed & Achievements added<br>
                <span class="clver">v0.1</span> - Beta Finished <span onclick="oFind()" style="cursor: pointer;">._.</span>
             </p>
@@ -146,6 +97,4 @@
    <script src="js/shop.js"></script>
    <script src="js/hitch.js"></script>
    <script src="js/menu.js"></script>
-   <script src="js/achieve.js"></script>
-   <script src="js/easy.js"></script>
 </html>
