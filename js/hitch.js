@@ -72,7 +72,7 @@ function mysteryMsg(x) {
       
       stat = stat - 300;
    }
-   else if (x == 3) {
+   else if (x == 4) {
       evpop = "<p class='evmes'>It contained a gasoline can!</p><p class='evopt' onclick='contRoad()'>Continue on the road</p>";
       document.getElementById("evn").innerHTML = "Mysterious Item";
       document.getElementById("evopts").innerHTML = evpop;
@@ -113,10 +113,9 @@ var hit1 = function() {
 var hit2 = function() {
    statstop = true;
    document.getElementById("event").style.display = "block";
-   evpop = '<p class="evmes">The Hitchhiker thanks you for your kindness and</p><p class="evopt" onclick="contRoad()">Continue on the road</p>';
+   evpop = '<p class="evmes">The Hitchhiker thanks you for your kindness</p><p class="evopt" onclick="contRoad()">Continue on the road</p>';
    document.getElementById("evn").innerHTML = "Hitchhiker";
    document.getElementById("evopts").innerHTML = evpop;
-   money = money + j;
 }
 var hit3 = function() {
    statstop = true;
@@ -125,5 +124,4 @@ var hit3 = function() {
    evpop = '<p class="evmes">The Hitchhiker attacks you and breaks a headlight</p><p class="evopt" onclick="contRoad()">Continue on the road</p>';
    document.getElementById("evn").innerHTML = "Hitchhiker";
    document.getElementById("evopts").innerHTML = evpop;
-   money = money + j;
 }
