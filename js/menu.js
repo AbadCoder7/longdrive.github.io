@@ -41,8 +41,6 @@ var score = 0
 var highestscore = 0
 
 // score enhancers
-var corpses = 0
-var genocide = false
 
 function die() {
    if (fuel <= 0 || stat <= 0 || nutr <= 0) {
@@ -69,7 +67,7 @@ function die() {
       score = scoreadded;
       document.getElementById("dscore").innerHTML = score;
       if (score > highestscore) {
-         highestscore = score;
+         highestscore = scoreadded;
          document.getElementById("highestscore").innerHTML = highestscore;
       }
       
