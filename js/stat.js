@@ -6,8 +6,11 @@ var nutr = 1000
 var food = 2
 var money = 150
 
+var corpses = 0
+var genocide = false
+
 // technical things
-let ver = "v0.4.1"
+const ver = "v0.4.2"
 
 function statShow() {
    if (stat >= 950) {
@@ -43,6 +46,11 @@ setInterval(function() {
    die();
    document.getElementById("ver").innerText = ver;
    document.getElementById("miles").innerHTML = miles;
+   
+   if (corpses >= 5) {genocide = true;}
+   
+   if (genocide == false) {document.getElementById("car").style.backgroundImage = "url('images/car.gif')";}
+   else if (genocide == true) {document.getElementById("car").style.backgroundImage = "url('images/car_hell.gif')";}
 }, 1);
 // second update
 setInterval(function() {
@@ -59,7 +67,6 @@ setInterval(function() {
 // third update
 setInterval(function() {
    if (statstop == false) {stat = stat - 10;}
-   if (corpses >= 20) {genocide = true;}
 }, 10000);
 
 function useFuel() {
