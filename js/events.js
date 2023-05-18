@@ -31,7 +31,7 @@ var randomEvent = function() {
          var j = 0
          j = Math.floor(Math.random() * 15) + 1; // 15
          
-         const testingEventBoolean = true;
+         const testingEventBoolean = false;
          if (testingEventBoolean == true) {j = 9;}
          
          document.getElementById("eventalert").style.display = "block";
