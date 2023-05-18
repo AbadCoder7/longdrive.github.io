@@ -1,0 +1,153 @@
+html {
+   user-select: none;
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   font-family: "Silkscreen", "Brush Script MT", cursive;
+}
+
+.screen {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: black;
+}
+
+.mainpart {
+   width: 100%;
+   height: 70%;
+   background-color: black;
+   background-size: top;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+}
+
+
+.hellsky {
+   width: 100%;
+   height: 100%;
+   background-color: red;
+   position: fixed;
+   top: 0;
+   left: 0;
+   opacity: 0.25;
+   
+   animation-name: psyche;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes psyche {
+   0% {background-color: red;}
+   10% {background-color: blue;}
+   20% {background-color: green;}
+   30% {background-color: orange;}
+   40% {background-color: purple;}
+   50% {background-color: lime;}
+   60% {background-color: red;}
+   70% {background-color: cyan;}
+   80% {background-color: purple;}
+   90% {background-color: yellow;}
+   100% {background-color: red;}
+}
+
+
+.road {
+   width: 100%;
+   height: 29%;
+   border-top: 1vh white solid;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+}
+
+.car {
+   height: 17.5%;
+   background-size: cover;
+   position: fixed;
+   bottom: 29%;
+   transform: scaleX(-1);
+   filter: invert(0%);
+   pointer-events: none;
+}
+
+.infotxt {
+   font-size: 4vh;
+   position: fixed;
+   bottom: 1%;
+   left: 1%;
+   margin: 0 0 0 0;
+   color: white;
+}
+.moneyinfotxt {
+   font-size: 8vh;
+   position: fixed;
+   bottom: 3%;
+   right: 3%;
+   margin: 0 0 0 0;
+   color: white;
+}
+
+/* Background 4 Stats*/
+
+.statBG {
+   aspect-ratio: 3 / 1;
+   height: 28%;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   pointer-events: none;
+}
+.moneyBG {
+   aspect-ratio: 2 / 1;
+   height: 20%;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   transform: rotateY(180deg);
+   pointer-events: none;
+}
+
+/* Alchoholism */
+
+.effectbar {
+   width: 70%;
+   height: 10%;
+   position: fixed;
+   top: 0;
+   right: 0;
+   margin: 1%;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   
+}
+
+.effectinform {
+   width: 70%;
+   height: 5%;
+   position: fixed;
+   top: 0;
+   right: 0;
+   margin: 1%;
+   margin-top: 6%;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   
+   color: white;
+   font-size: 2.5vh;
+}
+
+.effecticon {
+   height: 70%;
+   aspect-ratio: 1 / 1;
+   background-size: cover;
+   margin: 1%;
+}
+
