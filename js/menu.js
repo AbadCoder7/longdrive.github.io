@@ -84,15 +84,7 @@ function die() {
       evpop = "";
       document.getElementById("death").style.display = "block";
       
-      // score handler
-      var scoreadded = 0
-      
-      scoreadded = scoreadded + miles * 10;
-      scoreadded = scoreadded + corpses * 50;
-      
-      if (genocide == true) {scoreadded = scoreadded + 10000;}
-      
-      score = scoreadded;
+      score = miles;
       document.getElementById("dscore").innerHTML = score;
       if (score > highestscore) {
          highestscore = scoreadded;
