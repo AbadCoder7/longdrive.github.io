@@ -81,7 +81,7 @@ function mysteryMsg(x) {
       document.getElementById("evn").innerHTML = "Mysterious Item";
       document.getElementById("evopts").innerHTML = evpop;
       
-      stat = stat - 300;
+      fuel = fuel + 500;
    }
 }
 
