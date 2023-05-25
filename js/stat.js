@@ -16,7 +16,7 @@ var engine = 0
 var body = 0
 
 // technical things
-const ver = "v0.5"
+const ver = "v0.5.1"
 
 function statShow() {
    if (stat >= 950) {
