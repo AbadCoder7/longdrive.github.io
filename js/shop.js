@@ -70,7 +70,7 @@ function roadPub(x) {
 function locBakery(x) {
    if (x == 1 && money >= 3) {
       money = money - 3;
-      nutr = nutr + 20;
+      nutr = nutr + 400;
       
       if (nutr > 1000) {nutr = 1000;}
       var i = 0
