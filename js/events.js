@@ -202,7 +202,7 @@ function optOne(x) {
       i = Math.floor(Math.random() * 4) + 1;
       mysteryMsg(i);
    }
-   else if (x == 8) {hurtmanMsg(1); corpses++;}
+   else if (x == 8) {hurtmanMsg(1);}
    else if (x == 9) {
       document.getElementById("st").innerText = "Roadside Pub";
       document.getElementById("sopt").innerHTML = "<span class='shopopt' onclick='roadPub(1)'>Whiskey - $20</span><br><span class='shopopt' onclick='roadPub(2)'>Vodka - $40</span><br><span class='shopopt' onclick='roadPub(3)'>Cigar - $15</span><br><span class='shopopt' onclick='contRoad()'>Continue on the road</span>";
