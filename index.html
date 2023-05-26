@@ -16,12 +16,12 @@
             <div class="hellsky" id="hellsky"></div>
             <div class="road" id="road"></div>
             <div id="carbox" style="width: 100%; height: auto; display: flex; justify-content: center;">
-               <img class="car" src="images/car.gif" id="car" onclick="goodStat()">
+               <img class="car" src="images/car.gif" id="car">
             </div>
 
             <img src="images/gameplay/statbg.png" class="statBG">
             <p class="infotxt">
-               <span style="font-size: 5vh; font-weight: bold;">Status: <span id="stat"></span></span><br>
+               <span style="font-size: 5vh; font-weight: bold;" onclick="goodStat()">Status: <span id="stat"></span></span><br>
                Fuel: <span id="fuel">100</span>%<br>
                <!--FCPS: 0.1% / 1s<br>-->
                Score: <span id="miles">0</span> Miles<br>
