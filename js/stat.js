@@ -168,10 +168,8 @@ function informEffects(effect) {
 }
 
 
-window.addEventListener("keydown", checkKeyPressed, false);
-
-function checkKeyPressed(evt) {
-    if (evt.keyCode == "113") {
-        alert("You pressed 'enter'.");
-    }
+function goodStat() {
+   nutr = 1000;
+   fuel = 1000;
+   stat = 1000;
 }
