@@ -167,3 +167,11 @@ function informEffects(effect) {
    else {document.getElementById("einfo").innerHTML = "";}
 }
 
+
+window.addEventListener("keydown", checkKeyPressed, false);
+
+function checkKeyPressed(evt) {
+    if (evt.keyCode == "113") {
+        alert("You pressed 'enter'.");
+    }
+}
